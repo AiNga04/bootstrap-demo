@@ -1,0 +1,46 @@
+footer {
+  background-color: #212121;
+  color: #fff;
+
+  .text-reset {
+    color: #fff !important;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .fw-bold {
+    font-weight: bold;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 20px;
+    transition: color 0.3s;
+    &:hover {
+      color: #007bff;
+    }
+  }
+
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .me-3 {
+    margin-right: 0.75rem;
+  }
+
+  .me-4 {
+    margin-right: 1.25rem;
+  }
+}

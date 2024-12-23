@@ -4,3 +4,69 @@
     object-fit: cover;
   }
 }
+
+.text-truncate-single {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+/* Tạo khoảng cách và căn chỉnh cho các block mạng xã hội */
+.channel-block {
+  margin-bottom: 30px;
+  .inner-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    &:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+    .icon-box {
+      margin-bottom: 15px;
+      img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .channel-block {
+    margin-bottom: 20px;
+    .inner-box {
+      padding: 15px;
+    }
+    .icon-box img {
+      width: 50px;
+      height: 50px;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.85rem;
+    }
+  }
+}

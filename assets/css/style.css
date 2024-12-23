@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .carousel-custom {
   position: relative;
   height: 450px;
@@ -67,6 +68,110 @@
 .img-custom img {
   width: 100%;
   object-fit: cover;
+}
+
+.text-truncate-single {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+/* Tạo khoảng cách và căn chỉnh cho các block mạng xã hội */
+.channel-block {
+  margin-bottom: 30px;
+}
+.channel-block .inner-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.channel-block .inner-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.channel-block .inner-box .icon-box {
+  margin-bottom: 15px;
+}
+.channel-block .inner-box .icon-box img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.channel-block .inner-box .icon-box img:hover {
+  transform: scale(1.1);
+}
+.channel-block .inner-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+.channel-block .inner-box p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .channel-block {
+    margin-bottom: 20px;
+  }
+  .channel-block .inner-box {
+    padding: 15px;
+  }
+  .channel-block .icon-box img {
+    width: 50px;
+    height: 50px;
+  }
+  .channel-block h3 {
+    font-size: 1rem;
+  }
+  .channel-block p {
+    font-size: 0.85rem;
+  }
+}
+footer {
+  background-color: #212121;
+  color: #fff;
+}
+footer .text-reset {
+  color: #fff !important;
+  text-decoration: none;
+}
+footer .text-reset:hover {
+  text-decoration: underline;
+}
+footer .fw-bold {
+  font-weight: bold;
+}
+footer .container {
+  padding: 0 15px;
+}
+footer .social-icons a {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 20px;
+  transition: color 0.3s;
+}
+footer .social-icons a:hover {
+  color: #007bff;
+}
+footer .text-uppercase {
+  text-transform: uppercase;
+}
+footer .text-center {
+  text-align: center;
+}
+footer .me-3 {
+  margin-right: 0.75rem;
+}
+footer .me-4 {
+  margin-right: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
