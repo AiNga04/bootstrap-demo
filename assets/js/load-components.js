@@ -12,7 +12,6 @@ function loadHTML(file, elementId) {
 }
 
 // Tải header và footer
-loadHTML("_navbar.html", "navbar");
-loadHTML("_contact.html", "contact");
-loadHTML("_footer.html", "footer");
-x;
+loadHTML("./_navbar.html", "navbar");
+loadHTML("./_contact.html", "contact");
+loadHTML("./_footer.html", "footer");
