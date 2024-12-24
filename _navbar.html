@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xxl bg-light fixed-top blur-filter" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="./img/logo.png" alt="logo" height="40" width="150">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
+                aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-item">
+                        <a href="index.html" class="nav-link active" aria-current="page">Trang Chủ</a>
+                    </a>
+                    <a class="nav-item">
+                        <a href="about.html" class="nav-link">Giới Thiệu</a>
+                    </a>
+                    <a class="nav-item">
+                        <a href="courses.html" class="nav-link">Khóa Học</a>
+                    </a>
+                    <a class="nav-item">
+                        <a href="faq.html" class="nav-link">Câu Hỏi Thường Gặp</a>
+                    </a>
+                    <a class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </a>
+                    <a class="nav-item">
+                        <a href="contact.html" class="nav-link">Liên Hệ</a>
+                    </a>
+                </ul>
+                <div class="ms-auto me-1 d-grid d-md-block gap-2 mb-2 mb-xxl-0">
+                    <a href="signup.html"
+                        class="btn btn-sm btn-danger align-items-center d-inline-flex text-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-plus-fill me-2" viewBox="0 0 16 16">
+                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                            <path fill-rule="evenodd"
+                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z">
+                            </path>
+                        </svg>
+                        Đăng Ký Miễn Phí
+                    </a>
+                    <a href="login.html"
+                        class="btn btn-sm btn-warning align-items-center d-inline-flex text-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-box-arrow-in-right me-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z">
+                            </path>
+                            <path fill-rule="evenodd"
+                                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z">
+                            </path>
+                        </svg>
+                        Đăng Nhập
+                    </a>
+                </div>
+                <form class="d-flex mt-lg-0 mt-2" role="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control form-control-sm" placeholder="Tìm kiếm khóa học...">
+                        <button type="submit" class="btn btn-sm btn-success">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

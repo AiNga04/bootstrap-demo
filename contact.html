@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="sticky-top" id="navbar"></div>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Section Title -->
+        <div class="text-center my-5">
+            <h1 class="fw-bold">Liên Hệ</h1>
+            <p class="text-muted">
+                Chúng tôi luôn sẵn sàng hỗ trợ bạn. Hãy gửi yêu cầu của bạn qua biểu mẫu dưới đây.
+            </p>
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="row text-center mb-5">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <i class="fas fa-question-circle fa-2x"></i>
+                        <h5 class="mt-2">Câu Hỏi Thường Gặp</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="small">Xem danh sách các câu hỏi và câu trả lời phổ biến nhất của chúng tôi.</p>
+                        <a href="faq.html" class="btn btn-primary btn-sm">Xem FAQ</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-success text-white">
+                        <i class="fas fa-info-circle fa-2x"></i>
+                        <h5 class="mt-2">Hỗ Trợ Khóa Học</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="small">Liên hệ với chúng tôi để được hỗ trợ chi tiết về các khóa học của chúng tôi.
+                        </p>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#contact_modal">
+                            Yêu Cầu Hỗ Trợ
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-warning text-white">
+                        <i class="fas fa-briefcase fa-2x"></i>
+                        <h5 class="mt-2">Dự Án Freelance</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="small">Gửi yêu cầu nếu bạn cần hỗ trợ về các dự án freelance của chúng tôi.</p>
+                        <a href="freelance.html" class="btn btn-warning btn-sm">Gửi Yêu Cầu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contact_modal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="contactModalLabel">Liên Hệ Hỗ Trợ</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Đóng"></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form>
+                            <div class="row g-1">
+                                <!-- Name -->
+                                <div class="col-md-12">
+                                    <label for="name" class="form-label small">Họ và tên</label>
+                                    <input type="text" class="form-control form-control-sm" id="name"
+                                        placeholder="Nhập họ và tên của bạn" required>
+                                </div>
+                                <!-- Email -->
+                                <div class="col-md-12">
+                                    <label for="email" class="form-label small">Email</label>
+                                    <input type="email" class="form-control form-control-sm" id="email"
+                                        placeholder="Nhập email của bạn" required>
+                                </div>
+                                <!-- Subject -->
+                                <div class="col-md-12">
+                                    <label for="subject" class="form-label small">Chủ đề</label>
+                                    <input type="text" class="form-control form-control-sm" id="subject"
+                                        placeholder="Chủ đề hỗ trợ" required>
+                                </div>
+                                <!-- Message -->
+                                <div class="col-md-12">
+                                    <label for="message" class="form-label small">Nội dung</label>
+                                    <textarea id="message" rows="5" class="form-control form-control-sm"
+                                        placeholder="Nhập nội dung cần hỗ trợ" required></textarea>
+                                </div>
+                                <!-- Submit Button -->
+                                <div class="col-md-12">
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-success btn-sm">
+                                            <i class="fas fa-paper-plane me-2"></i> Gửi Tin Nhắn
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact -->
+        <section id="contact"></section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2 class="text-center mb-4">Gửi Yêu Cầu</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Họ và Tên</label>
+                        <input type="text" id="name" class="form-control" placeholder="Nhập họ và tên của bạn" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Nhập email của bạn" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Chủ Đề</label>
+                    <input type="text" id="subject" class="form-control" placeholder="Nhập chủ đề liên hệ" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Nội Dung</label>
+                    <textarea id="message" class="form-control" rows="5" placeholder="Nhập nội dung tin nhắn"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Gửi Tin Nhắn</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- JS -->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/load-components.js"></script>
+</body>
+
+</html>

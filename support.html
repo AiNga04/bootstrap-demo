@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỗ trợ</title>
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="sticky-top my-5" id="navbar"></div>
+
+    <!-- Support Section -->
+    <section class="support-section py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Trung Tâm Hỗ Trợ</h1>
+            <p class="text-muted text-center mb-5">
+                Chúng tôi sẵn sàng hỗ trợ bạn! Vui lòng tham khảo các câu hỏi thường gặp hoặc liên hệ trực tiếp với
+                chúng
+                tôi.
+            </p>
+
+            <!-- Contact Options -->
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <img src="./img/faq-icon.png" alt="FAQ" class="mb-3" width="60">
+                            <h5 class="card-title">Câu Hỏi Thường Gặp</h5>
+                            <p class="card-text">Xem các câu hỏi phổ biến để giải quyết nhanh chóng vấn đề của bạn.</p>
+                            <a href="faq.html" class="btn btn-primary">Xem Câu Hỏi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <img src="./img/chat-icon.png" alt="Chat" class="mb-3" width="60">
+                            <h5 class="card-title">Trò Chuyện Trực Tiếp</h5>
+                            <p class="card-text">Kết nối với chúng tôi qua trò chuyện trực tiếp để được hỗ trợ nhanh
+                                nhất.
+                            </p>
+                            <a href="#" class="btn btn-success">Bắt Đầu Chat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <img src="./img/email-icon.png" alt="Email" class="mb-3" width="60">
+                            <h5 class="card-title">Gửi Email</h5>
+                            <p class="card-text">Gửi yêu cầu qua email, chúng tôi sẽ phản hồi trong vòng 24 giờ.</p>
+                            <a href="mailto:support@khoahoc.com" class="btn btn-warning">Gửi Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Form -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <h3 class="mb-4">Gửi Yêu Cầu Hỗ Trợ</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Họ và Tên</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên của bạn"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Nội Dung Yêu Cầu</label>
+                            <textarea class="form-control" id="message" rows="5"
+                                placeholder="Nhập nội dung hỗ trợ cần thiết" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gửi Yêu Cầu</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- js -->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/load-components.js"></script>
+</body>
+
+</html>
