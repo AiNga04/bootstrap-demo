@@ -7,107 +7,206 @@
     <title>Giới thiệu</title>
     <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hero-section {
+            background: url('./img/about-1.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .hero-section .bg-desc {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- Header -->
-    <div class="sticky-top my-5" id="navbar"></div>
+    <div class="sticky-top mb-5" id="navbar"></div>
 
     <!-- Main content -->
     <main class="container py-5">
-        <!-- FAQ Banner -->
-        <section class="faq-banner">
-            <h1 class="display-4 fw-bold">Câu Hỏi Thường Gặp</h1>
-            <p>Giải đáp những thắc mắc phổ biến của bạn</p>
+        <!-- Hero Section -->
+        <section class="hero-section mb-5">
+            <div class="bg-desc">
+                <h1>Chào mừng bạn đến với nền tảng học lập trình hàng đầu!</h1>
+                <p>Khám phá hành trình học lập trình hiệu quả, từ cơ bản đến nâng cao, với đội ngũ giảng viên xuất sắc.
+                </p>
+            </div>
         </section>
 
-        <!-- FAQ Content -->
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <div class="accordion" id="faqAccordion">
-                        <!-- Question 1 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Tôi có thể học các khóa học ở đâu?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Bạn có thể học các khóa học của chúng tôi ở bất kỳ đâu và bất kỳ lúc nào thông qua
-                                    nền tảng
-                                    trực tuyến của chúng tôi. Chỉ cần một thiết bị có kết nối Internet!
-                                </div>
-                            </div>
+        <!-- About Us Section -->
+        <section class="container py-5">
+            <h2 class="text-center mb-4 fw-bold">Về Chúng Tôi</h2>
+            <div class="row align-items-center">
+                <!-- Image Section -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="./img/about-2.jpg" class="img-fluid rounded shadow-sm" alt="About Us">
+                </div>
+                <!-- Text Section -->
+                <div class="col-lg-6">
+                    <p class="fs-5">
+                        Chúng tôi cung cấp các khóa học lập trình đa dạng từ cơ bản đến nâng cao, giúp bạn từng bước xây
+                        dựng
+                        kiến thức và kỹ năng.
+                    </p>
+                    <p class="fs-5">
+                        Với mục tiêu <span class="text-primary fw-bold">hỗ trợ mọi người</span> trong hành trình tiếp
+                        cận công
+                        nghệ, chúng tôi luôn cập nhật nội dung mới nhất và thực tiễn.
+                    </p>
+                    <p class="fs-5">
+                        Đội ngũ giảng viên là những chuyên gia dày dạn kinh nghiệm trong lĩnh vực lập trình web, mobile,
+                        và trí
+                        tuệ nhân tạo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Why Choose Us Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Tại Sao Chọn Chúng Tôi?</h2>
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm text-center p-4">
+                            <i class="fas fa-award fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Chất Lượng Hàng Đầu</h5>
+                            <p class="card-text text-muted">Các khóa học được xây dựng bởi chuyên gia đầu ngành.</p>
                         </div>
-                        <!-- Question 2 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Làm thế nào để tôi thanh toán cho một khóa học?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Bạn có thể thanh toán qua nhiều phương thức khác nhau như chuyển khoản ngân hàng,
-                                    thẻ tín
-                                    dụng, ví điện tử hoặc thanh toán trực tiếp tại văn phòng của chúng tôi.
-                                </div>
-                            </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm text-center p-4">
+                            <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Học Tập Linh Hoạt</h5>
+                            <p class="card-text text-muted">Truy cập tài liệu học tập bất kỳ lúc nào, bất kỳ nơi đâu.
+                            </p>
                         </div>
-                        <!-- Question 3 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Tôi có được hỗ trợ nếu gặp vấn đề trong quá trình học không?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Chúng tôi có đội ngũ hỗ trợ 24/7 sẵn sàng giải đáp mọi thắc mắc và hỗ trợ bạn trong
-                                    suốt quá
-                                    trình học tập.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Question 4 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Tôi có được hoàn tiền nếu không hài lòng với khóa học không?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Chúng tôi có chính sách hoàn tiền trong vòng 7 ngày nếu bạn không hài lòng với chất
-                                    lượng
-                                    khóa học. Vui lòng liên hệ với đội ngũ hỗ trợ để biết thêm chi tiết.
-                                </div>
-                            </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm text-center p-4">
+                            <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Hỗ Trợ Tận Tình</h5>
+                            <p class="card-text text-muted">Đội ngũ hỗ trợ luôn sẵn sàng giải đáp mọi thắc mắc.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="bg-white py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Thành Tựu Nổi Bật</h2>
+                <div class="row g-4 text-center">
+                    <!-- Achievement 1 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm text-center p-4">
+                            <i class="fas fa-users fa-3x text-success mb-3"></i>
+                            <h5 class="card-title fw-bold">1,000+ Học Viên</h5>
+                            <p class="card-text text-muted">Hơn 1,000 học viên đã tốt nghiệp và thành công trong sự
+                                nghiệp công
+                                nghệ.</p>
+                        </div>
+                    </div>
+                    <!-- Achievement 2 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm text-center p-4">
+                            <i class="fas fa-book fa-3x text-success mb-3"></i>
+                            <h5 class="card-title fw-bold">50+ Khóa Học</h5>
+                            <p class="card-text text-muted">Cung cấp hơn 50 khóa học chất lượng cao từ lập trình cơ bản
+                                đến
+                                nâng cao.</p>
+                        </div>
+                    </div>
+                    <!-- Achievement 3 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm text-center p-4">
+                            <i class="fas fa-smile-beam fa-3x text-success mb-3"></i>
+                            <h5 class="card-title fw-bold">90% Hài Lòng</h5>
+                            <p class="card-text text-muted">Được đánh giá cao với 90% học viên hài lòng về chất lượng
+                                giảng dạy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Call to Action -->
+        <section class="call-to-action text-center py-4 rounded-2"
+            style="background: linear-gradient(135deg, #6a11cb, #2575fc); color: white;">
+            <div class="container">
+                <h2 class="fw-bold" style="font-size: 2rem;">Bắt Đầu Hành Trình Lập Trình Của Bạn Ngay Hôm Nay!</h2>
+                <p class="mb-3" style="font-size: 1rem;">Học ngay những kỹ năng lập trình hiện đại để tạo dựng tương lai
+                    thành
+                    công.</p>
+                <a href="/courses.html" class="btn btn-light px-4 py-2 shadow-sm fw-bold"
+                    style="border-radius: 10px; transition: all 0.3s; font-size: 1rem;">
+                    Xem Khóa Học
+                </a>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
-    <div id="footer"></div>
+    <section id="footer"></section>
 
     <!-- js -->
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>

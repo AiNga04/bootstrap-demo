@@ -15,3 +15,4 @@ function loadHTML(file, elementId) {
 loadHTML("_navbar.html", "navbar");
 loadHTML("_contact.html", "contact");
 loadHTML("_footer.html", "footer");
+x;

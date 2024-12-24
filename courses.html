@@ -4,110 +4,481 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khóa học</title>
+    <title>Danh sách khóa học</title>
     <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <div class="sticky-top my-5" id="navbar"></div>
+    <section id="navbar"></section>
 
     <!-- Main content -->
     <main class="container py-5">
-        <!-- FAQ Banner -->
-        <section class="faq-banner">
-            <h1 class="display-4 fw-bold">Câu Hỏi Thường Gặp</h1>
-            <p>Giải đáp những thắc mắc phổ biến của bạn</p>
-        </section>
+        <!-- Title -->
+        <div class="row py-5">
+            <div class="col">
+                <h2 class="text-center text-primary fw-bold">Danh Sách Khóa Học</h2>
+            </div>
+        </div>
 
-        <!-- FAQ Content -->
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <div class="accordion" id="faqAccordion">
-                        <!-- Question 1 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Tôi có thể học các khóa học ở đâu?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Bạn có thể học các khóa học của chúng tôi ở bất kỳ đâu và bất kỳ lúc nào thông qua
-                                    nền tảng
-                                    trực tuyến của chúng tôi. Chỉ cần một thiết bị có kết nối Internet!
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Question 2 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Làm thế nào để tôi thanh toán cho một khóa học?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Bạn có thể thanh toán qua nhiều phương thức khác nhau như chuyển khoản ngân hàng,
-                                    thẻ tín
-                                    dụng, ví điện tử hoặc thanh toán trực tiếp tại văn phòng của chúng tôi.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Question 3 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Tôi có được hỗ trợ nếu gặp vấn đề trong quá trình học không?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Chúng tôi có đội ngũ hỗ trợ 24/7 sẵn sàng giải đáp mọi thắc mắc và hỗ trợ bạn trong
-                                    suốt quá
-                                    trình học tập.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Question 4 -->
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Tôi có được hoàn tiền nếu không hài lòng với khóa học không?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Chúng tôi có chính sách hoàn tiền trong vòng 7 ngày nếu bạn không hài lòng với chất
-                                    lượng
-                                    khóa học. Vui lòng liên hệ với đội ngũ hỗ trợ để biết thêm chi tiết.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Filter Section -->
+        <div class="card shadow-sm p-4 mb-5 bg-light">
+            <div class="row g-3">
+                <!-- Category Filter -->
+                <div class="col-md-3">
+                    <label for="categoryFilter" class="form-label fw-bold text-primary">
+                        <i class="fas fa-list-alt me-2"></i>Danh Mục
+                    </label>
+                    <select id="categoryFilter" class="form-select border-primary">
+                        <option value="all">Tất Cả</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="fullstack">Fullstack</option>
+                        <option value="data">Data Science</option>
+                    </select>
+                </div>
+
+                <!-- Price Filter -->
+                <div class="col-md-3">
+                    <label for="priceFilter" class="form-label fw-bold text-primary">
+                        <i class="fas fa-tags me-2"></i>Mức Giá
+                    </label>
+                    <select id="priceFilter" class="form-select border-primary">
+                        <option value="all">Tất Cả</option>
+                        <option value="low">Dưới 500,000 VND</option>
+                        <option value="medium">500,000 - 1,000,000 VND</option>
+                        <option value="high">Trên 1,000,000 VND</option>
+                    </select>
+                </div>
+
+                <!-- Rating Filter -->
+                <div class="col-md-3">
+                    <label for="ratingFilter" class="form-label fw-bold text-primary">
+                        <i class="fas fa-star me-2"></i>Đánh Giá
+                    </label>
+                    <select id="ratingFilter" class="form-select border-primary">
+                        <option value="all">Tất Cả</option>
+                        <option value="4">4 sao trở lên</option>
+                        <option value="5">5 sao</option>
+                    </select>
+                </div>
+
+                <!-- Filter Button -->
+                <div class="col-md-3 d-flex align-items-end">
+                    <button id="applyFilters" class="btn btn-primary w-100 fw-bold">
+                        <i class="fas fa-filter me-2"></i>Lọc
+                    </button>
                 </div>
             </div>
         </div>
+
+        <!-- Courses Section -->
+        <div class="row g-4">
+            <!-- Course 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100 border-0">
+                    <img src="img/react-course.jpg" class="card-img-top" alt="React Course">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Khóa Học React JS</h5>
+                        <p class="card-text text-muted">Xây dựng ứng dụng web động với React.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.8/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>850,000 VND</strong></p>
+                        <p class="text-danger"><strong>600,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100 border-0">
+                    <img src="img/bootstrap-course.png" class="card-img-top" alt="Bootstrap Course">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Khóa Học Bootstrap</h5>
+                        <p class="card-text text-muted">Tạo giao diện responsive chuyên nghiệp.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>700,000 VND</strong></p>
+                        <p class="text-danger"><strong>500,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100 border-0">
+                    <img src="img/javascript-course.jpg" class="card-img-top" alt="JavaScript Course">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Khóa Học JavaScript</h5>
+                        <p class="card-text text-muted">Làm chủ JavaScript từ cơ bản đến nâng cao.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>600,000 VND</strong></p>
+                        <p class="text-danger"><strong>450,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100 border-0">
+                    <img src="img/python-course.jpg" class="card-img-top" alt="Python Course">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Khóa Học Python</h5>
+                        <p class="card-text text-muted">Học Python cho phát triển phần mềm.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>700,000 VND</strong></p>
+                        <p class="text-danger"><strong>500,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Khóa Học 5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/html-course.jpg" class="card-img-top" alt="HTML Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học HTML</h5>
+                        <p class="card-text text-muted">Nền tảng cho lập trình web với HTML.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>500,000 VND</strong></p>
+                        <p class="text-danger"><strong>350,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/css-course.jpg" class="card-img-top" alt="CSS Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học CSS</h5>
+                        <p class="card-text text-muted">Học cách tạo phong cách đẹp mắt cho website.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>500,000 VND</strong></p>
+                        <p class="text-danger"><strong>400,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 7 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/sass-course.jpg" class="card-img-top" alt="SASS Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học SASS</h5>
+                        <p class="card-text text-muted">Tối ưu hóa CSS với SASS.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>700,000 VND</strong></p>
+                        <p class="text-danger"><strong>500,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 8 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/responsive-course.jpg" class="card-img-top" alt="Responsive Design Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học Responsive Design</h5>
+                        <p class="card-text text-muted">Học cách làm website hiển thị tốt trên mọi thiết bị.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>750,000 VND</strong></p>
+                        <p class="text-danger"><strong>550,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Khóa Học 9 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/vue-course.jpg" class="card-img-top" alt="Vue.js Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học Vue.js</h5>
+                        <p class="card-text text-muted">Xây dựng ứng dụng web với Vue.js.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>800,000 VND</strong></p>
+                        <p class="text-danger"><strong>600,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 10 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/typescript-course.jpg" class="card-img-top" alt="TypeScript Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học TypeScript</h5>
+                        <p class="card-text text-muted">Nâng cấp kỹ năng JavaScript với TypeScript.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>850,000 VND</strong></p>
+                        <p class="text-danger"><strong>650,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 11 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/webpack-course.jpg" class="card-img-top" alt="Webpack Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học Webpack</h5>
+                        <p class="card-text text-muted">Quản lý tài nguyên dự án Front-end chuyên nghiệp.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>900,000 VND</strong></p>
+                        <p class="text-danger"><strong>700,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 12 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/angular-course.jpg" class="card-img-top" alt="Angular Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học Angular</h5>
+                        <p class="card-text text-muted">Xây dựng ứng dụng web mạnh mẽ với Angular.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>950,000 VND</strong></p>
+                        <p class="text-danger"><strong>750,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Khóa Học 13 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/graphql-course.jpg" class="card-img-top" alt="GraphQL Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học GraphQL</h5>
+                        <p class="card-text text-muted">Tối ưu API với công nghệ GraphQL hiện đại.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>1,000,000 VND</strong></p>
+                        <p class="text-danger"><strong>800,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 14 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/sass-course.jpg" class="card-img-top" alt="SASS Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học SASS</h5>
+                        <p class="card-text text-muted">Tăng tốc viết CSS với SASS chuyên nghiệp.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>700,000 VND</strong></p>
+                        <p class="text-danger"><strong>500,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 15 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/redux-course.jpg" class="card-img-top" alt="Redux Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học Redux</h5>
+                        <p class="card-text text-muted">Quản lý trạng thái ứng dụng hiệu quả với Redux.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>800,000 VND</strong></p>
+                        <p class="text-danger"><strong>600,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 16 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/vue-course.jpg" class="card-img-top" alt="Vue.js Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học Vue.js</h5>
+                        <p class="card-text text-muted">Tạo giao diện đẹp và tối ưu với Vue.js.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>750,000 VND</strong></p>
+                        <p class="text-danger"><strong>550,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 17 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/nextjs-course.jpg" class="card-img-top" alt="Next.js Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học Next.js</h5>
+                        <p class="card-text text-muted">Xây dựng ứng dụng web server-side rendering với Next.js.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>950,000 VND</strong></p>
+                        <p class="text-danger"><strong>750,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 18 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/tailwind-course.jpg" class="card-img-top" alt="Tailwind CSS Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học Tailwind CSS</h5>
+                        <p class="card-text text-muted">Tạo giao diện nhanh chóng với Tailwind CSS.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>800,000 VND</strong></p>
+                        <p class="text-danger"><strong>600,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 19 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/angular-course.jpg" class="card-img-top" alt="Angular Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học Angular</h5>
+                        <p class="card-text text-muted">Phát triển ứng dụng quy mô lớn với Angular.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>950,000 VND</strong></p>
+                        <p class="text-danger"><strong>750,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khóa Học 20 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm h-100">
+                    <img src="img/typescript-course.jpg" class="card-img-top" alt="TypeScript Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Khóa Học TypeScript</h5>
+                        <p class="card-text text-muted">Học TypeScript để tối ưu JavaScript hiện đại.</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning me-2">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.6/5</span>
+                        </div>
+                        <p class="text-muted text-decoration-line-through"><strong>850,000 VND</strong></p>
+                        <p class="text-danger"><strong>650,000 VND</strong></p>
+                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
 
-    <!-- Footer -->
-    <div id="footer"></div>
+    <section id="footer"></section>
 
     <!-- js -->
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>

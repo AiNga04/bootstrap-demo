@@ -220,7 +220,7 @@
                                             <p class="card-text text-truncate-single text-muted">Làm quen với cấu trúc
                                                 cơ bản của trang web
                                                 và các thẻ HTML.</p>
-                                            <a href="./single-course.html" class="btn btn-primary">Xem Chi Tiết</a>
+                                            <a href="./course-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
                                         </div>
                                     </div>
                                 </div>
@@ -234,7 +234,7 @@
                                             <p class="card-text text-truncate-single text-muted">Tạo các trang web đẹp
                                                 mắt bằng CSS và SCSS.
                                             </p>
-                                            <a href="./single-course.html" class="btn btn-primary">Xem Chi Tiết</a>
+                                            <a href="./course-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
                                         </div>
                                     </div>
                                 </div>
@@ -248,7 +248,7 @@
                                             <p class="card-text text-truncate-single text-muted">Học lập trình
                                                 JavaScript từ cơ bản đến nâng
                                                 cao.</p>
-                                            <a href="./single-course.html" class="btn btn-primary">Xem Chi Tiết</a>
+                                            <a href="./course-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
                                         </div>
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@
                                             <p class="card-text text-truncate-single text-muted">Làm quen với Bootstrap,
                                                 thiết kế giao diện
                                                 responsive.</p>
-                                            <a href="./single-course.html" class="btn btn-primary">Xem Chi Tiết</a>
+                                            <a href="./course-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
                                         </div>
                                     </div>
                                 </div>
@@ -281,7 +281,7 @@
                                             <p class="card-text text-truncate-single text-muted">Xây dựng ứng dụng web
                                                 động với React.
                                             </p>
-                                            <a href="./single-course.html" class="btn btn-primary">Xem Chi Tiết</a>
+                                            <a href="./course-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
                                         </div>
                                     </div>
                                 </div>
@@ -294,7 +294,7 @@
                                             <h5 class="card-title">Khóa Học HTML Nâng Cao</h5>
                                             <p class="card-text text-truncate-single text-muted">Nâng cao kỹ năng và tối
                                                 ưu mã HTML.</p>
-                                            <a href="./single-course.html" class="btn btn-primary">Xem Chi Tiết</a>
+                                            <a href="./course-detail.html" class="btn btn-primary">Xem Chi Tiết</a>
                                         </div>
                                     </div>
                                 </div>
@@ -400,15 +400,14 @@
 
                         <!-- Courses Grid -->
                         <div class="row">
-                            <!-- Course Item 1 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card shadow-sm h-100">
                                     <img src="img/java-course.jpg" class="card-img-top" alt="Course Image">
                                     <div class="card-body">
                                         <h5 class="card-title">Khóa Học Lập Trình Java</h5>
                                         <p class="card-text text-truncate-single text-muted">Học cách lập trình ứng dụng
-                                            Java từ cơ bản đến
-                                            nâng cao.</p>
+                                            Java từ cơ bản đến nâng
+                                            cao.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="badge p-2 small bg-success">Miễn Phí</span>
                                             <div class="d-flex align-items-center">
@@ -426,11 +425,17 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="text-danger mt-2"><strong>Giá: 0 VND</strong></p>
-                                        <a href="./single-course.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                                        <!-- Hiển thị giá gốc và giá sau khi giảm -->
+                                        <p class="text-muted text-decoration-line-through mt-2"><strong>Giá Gốc:
+                                                1,200,000 VND</strong></p>
+                                        <p class="text-danger mt-2"><strong>Giá Sau Giảm: 800,000 VND</strong></p>
+                                        <!-- Phần trăm giảm giá -->
+                                        <p class="text-success mt-1"><strong>Giảm Giá: 33%</strong></p>
+                                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Course Item 2 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -438,8 +443,8 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Thiết Kế Website với React</h5>
                                         <p class="card-text text-truncate-single text-muted">Xây dựng website hiện đại
-                                            và chuyên nghiệp với
-                                            React.</p>
+                                            và chuyên nghiệp với React.
+                                        </p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="badge p-2 small bg-warning">Phổ Biến</span>
                                             <div class="d-flex align-items-center">
@@ -457,11 +462,17 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="text-danger mt-2"><strong>Giá: 500,000 VND</strong></p>
-                                        <a href="./single-course.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                                        <!-- Giá gốc và giá sau khi giảm -->
+                                        <p class="text-muted text-decoration-line-through mt-2"><strong>Giá Gốc: 600,000
+                                                VND</strong></p>
+                                        <p class="text-danger mt-2"><strong>Giá Sau Giảm: 500,000 VND</strong></p>
+                                        <!-- Phần trăm giảm giá -->
+                                        <p class="text-success mt-1"><strong>Giảm Giá: 16.7%</strong></p>
+                                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Course Item 3 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -469,10 +480,10 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Khóa Học HTML Cơ Bản</h5>
                                         <p class="card-text text-truncate-single text-muted">Làm quen với cấu trúc cơ
-                                            bản của trang web và
-                                            các thẻ HTML.</p>
+                                            bản của trang web và các thẻ
+                                            HTML.</p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="badge p-2 small bg-danger">Nỗi bật</span>
+                                            <span class="badge p-2 small bg-danger">Nổi bật</span>
                                             <div class="d-flex align-items-center">
                                                 <span
                                                     class="me-2 rounded-pill px-2 py-1 small d-inline-flex align-items-center"
@@ -488,11 +499,17 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="text-danger mt-2"><strong>Giá: 300,000 VND</strong></p>
-                                        <a href="./single-course.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                                        <!-- Giá gốc và giá sau khi giảm -->
+                                        <p class="text-muted text-decoration-line-through mt-2"><strong>Giá Gốc: 400,000
+                                                VND</strong></p>
+                                        <p class="text-danger mt-2"><strong>Giá Sau Giảm: 0 VND</strong></p>
+                                        <!-- Phần trăm giảm giá -->
+                                        <p class="text-success mt-1"><strong>Giảm Giá: 100%</strong></p>
+                                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Course Item 4 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -502,7 +519,7 @@
                                         <p class="card-text text-truncate-single text-muted">Tạo các trang web đẹp mắt
                                             bằng CSS và SCSS.</p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="badge p-2 small bg-danger">Nỗi bật</span>
+                                            <span class="badge p-2 small bg-danger">Nổi bật</span>
                                             <div class="d-flex align-items-center">
                                                 <span
                                                     class="me-2 rounded-pill px-2 py-1 small d-inline-flex align-items-center"
@@ -518,11 +535,17 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="text-danger mt-2"><strong>Giá: 400,000 VND</strong></p>
-                                        <a href="./single-course.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                                        <!-- Giá gốc và giá sau khi giảm -->
+                                        <p class="text-muted text-decoration-line-through mt-2"><strong>Giá Gốc: 500,000
+                                                VND</strong></p>
+                                        <p class="text-danger mt-2"><strong>Giá Sau Giảm: 400,000 VND</strong></p>
+                                        <!-- Phần trăm giảm giá -->
+                                        <p class="text-success mt-1"><strong>Giảm Giá: 20%</strong></p>
+                                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Course Item 5 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -530,10 +553,9 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Khóa Học JavaScript</h5>
                                         <p class="card-text text-truncate-single text-muted">Học lập trình JavaScript từ
-                                            cơ bản đến nâng cao.
-                                        </p>
+                                            cơ bản đến nâng cao.</p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="badge p-2 small bg-danger">Nỗi bật</span>
+                                            <span class="badge p-2 small bg-danger">Nổi bật</span>
                                             <div class="d-flex align-items-center">
                                                 <span
                                                     class="me-2 rounded-pill px-2 py-1 small d-inline-flex align-items-center"
@@ -544,16 +566,21 @@
                                                         <path
                                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                                                         </path>
-                                                    </svg>
-                                                    4.7/5
+                                                    </svg> 4.7/5
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="text-danger mt-2"><strong>Giá: 700,000 VND</strong></p>
-                                        <a href="./single-course.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                                        <!-- Giá gốc và giá sau khi giảm -->
+                                        <p class="text-muted text-decoration-line-through mt-2"><strong>Giá Gốc: 900,000
+                                                VND</strong></p>
+                                        <p class="text-danger mt-2"><strong>Giá Sau Giảm: 700,000 VND</strong></p>
+                                        <!-- Phần trăm giảm giá -->
+                                        <p class="text-success mt-1"><strong>Giảm Giá: 22.2%</strong></p>
+                                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Course Item 6 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -561,10 +588,10 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Khóa Học Bootstrap</h5>
                                         <p class="card-text text-truncate-single text-muted">Làm quen với Bootstrap,
-                                            thiết kế giao diện
-                                            responsive.</p>
+                                            thiết kế giao diện responsive.
+                                        </p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="badge p-2 small bg-danger">Nỗi bật</span>
+                                            <span class="badge p-2 small bg-danger">Nổi bật</span>
                                             <div class="d-flex align-items-center">
                                                 <span
                                                     class="me-2 rounded-pill px-2 py-1 small d-inline-flex align-items-center"
@@ -575,16 +602,21 @@
                                                         <path
                                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                                                         </path>
-                                                    </svg>
-                                                    4.6/5
+                                                    </svg> 4.6/5
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="text-danger mt-2"><strong>Giá: 250,000 VND</strong></p>
-                                        <a href="./single-course.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                                        <!-- Giá gốc và giá sau khi giảm -->
+                                        <p class="text-muted text-decoration-line-through mt-2"><strong>Giá Gốc: 700,000
+                                                VND</strong></p>
+                                        <p class="text-danger mt-2"><strong>Giá Sau Giảm: 500,000 VND</strong></p>
+                                        <!-- Phần trăm giảm giá -->
+                                        <p class="text-success mt-1"><strong>Giảm Giá: 29%</strong></p>
+                                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Course Item 7 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -594,7 +626,7 @@
                                         <p class="card-text text-truncate-single text-muted">Xây dựng ứng dụng web động
                                             với React.</p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="badge p-2 small bg-danger">Nỗi bật</span>
+                                            <span class="badge p-2 small bg-danger">Nổi bật</span>
                                             <div class="d-flex align-items-center">
                                                 <span
                                                     class="me-2 rounded-pill px-2 py-1 small d-inline-flex align-items-center"
@@ -605,16 +637,21 @@
                                                         <path
                                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                                                         </path>
-                                                    </svg>
-                                                    4.9/5
+                                                    </svg> 4.9/5
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="text-danger mt-2"><strong>Giá: 600,000 VND</strong></p>
-                                        <a href="./single-course.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                                        <!-- Giá gốc và giá sau khi giảm -->
+                                        <p class="text-muted text-decoration-line-through mt-2"><strong>Giá Gốc: 850,000
+                                                VND</strong></p>
+                                        <p class="text-danger mt-2"><strong>Giá Sau Giảm: 600,000 VND</strong></p>
+                                        <!-- Phần trăm giảm giá -->
+                                        <p class="text-success mt-1"><strong>Giảm Giá: 29%</strong></p>
+                                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Course Item 8 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -624,7 +661,7 @@
                                         <p class="card-text text-truncate-single text-muted">Nâng cao kỹ năng và tối ưu
                                             mã HTML.</p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="badge p-2 small bg-danger">Nỗi bật</span>
+                                            <span class="badge p-2 small bg-danger">Nổi bật</span>
                                             <div class="d-flex align-items-center">
                                                 <span
                                                     class="me-2 rounded-pill px-2 py-1 small d-inline-flex align-items-center"
@@ -635,16 +672,21 @@
                                                         <path
                                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                                                         </path>
-                                                    </svg>
-                                                    4.7/5
+                                                    </svg> 4.7/5
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="text-danger mt-2"><strong>Giá: 450,000 VND</strong></p>
-                                        <a href="./single-course.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                                        <!-- Giá gốc và giá sau khi giảm -->
+                                        <p class="text-muted text-decoration-line-through mt-2"><strong>Giá Gốc: 650,000
+                                                VND</strong></p>
+                                        <p class="text-danger mt-2"><strong>Giá Sau Giảm: 450,000 VND</strong></p>
+                                        <!-- Phần trăm giảm giá -->
+                                        <p class="text-success mt-1"><strong>Giảm Giá: 31%</strong></p>
+                                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Course Item 9 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -652,8 +694,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Khóa Học Vue JS</h5>
                                         <p class="card-text text-truncate-single text-muted">Học Vue JS để phát triển
-                                            ứng dụng web hiện đại.
-                                        </p>
+                                            ứng dụng web hiện đại.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="badge p-2 small bg-primary">Mới</span>
                                             <div class="d-flex align-items-center">
@@ -666,16 +707,21 @@
                                                         <path
                                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                                                         </path>
-                                                    </svg>
-                                                    4.5/5
+                                                    </svg> 4.8/5
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="text-danger mt-2"><strong>Giá: 350,000 VND</strong></p>
-                                        <a href="./single-course.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                                        <!-- Giá gốc và giá sau khi giảm -->
+                                        <p class="text-muted text-decoration-line-through mt-2"><strong>Giá Gốc:
+                                                1,200,000 VND</strong></p>
+                                        <p class="text-danger mt-2"><strong>Giá Sau Giảm: 800,000 VND</strong></p>
+                                        <!-- Phần trăm giảm giá -->
+                                        <p class="text-success mt-1"><strong>Giảm Giá: 33.3%</strong></p>
+                                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Course Item 10 -->
                             <div class="col-md-6 mb-4">
                                 <div class="card shadow-sm h-100">
@@ -686,6 +732,7 @@
                                             tạp với Angular.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="badge p-2 small bg-primary">Mới</span>
+
                                             <div class="d-flex align-items-center">
                                                 <span
                                                     class="me-2 rounded-pill px-2 py-1 small d-inline-flex align-items-center"
@@ -696,13 +743,17 @@
                                                         <path
                                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                                                         </path>
-                                                    </svg>
-                                                    4.7/5
+                                                    </svg> 4.9/5
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="text-danger mt-2"><strong>Giá: 800,000 VND</strong></p>
-                                        <a href="./single-course.html" class="btn btn-primary btn-sm">Chi Tiết</a>
+                                        <!-- Giá gốc và giá sau khi giảm -->
+                                        <p class="text-muted text-decoration-line-through mt-2"><strong>Giá Gốc:
+                                                1,500,000 VND</strong></p>
+                                        <p class="text-danger mt-2"><strong>Giá Sau Giảm: 1,100,000 VND</strong></p>
+                                        <!-- Phần trăm giảm giá -->
+                                        <p class="text-success mt-1"><strong>Giảm Giá: 26.7%</strong></p>
+                                        <a href="./course-detail.html" class="btn btn-primary btn-sm">Chi Tiết</a>
                                     </div>
                                 </div>
                             </div>

@@ -12,6 +12,29 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        /* Hover effect for cards */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect for buttons */
+        .btn:hover {
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect for support section options */
+        .card img {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -25,8 +48,7 @@
             <h1 class="text-center mb-4">Trung Tâm Hỗ Trợ</h1>
             <p class="text-muted text-center mb-5">
                 Chúng tôi sẵn sàng hỗ trợ bạn! Vui lòng tham khảo các câu hỏi thường gặp hoặc liên hệ trực tiếp với
-                chúng
-                tôi.
+                chúng tôi.
             </p>
 
             <!-- Contact Options -->
@@ -47,8 +69,7 @@
                             <img src="./img/chat-icon.png" alt="Chat" class="mb-3" width="60">
                             <h5 class="card-title">Trò Chuyện Trực Tiếp</h5>
                             <p class="card-text">Kết nối với chúng tôi qua trò chuyện trực tiếp để được hỗ trợ nhanh
-                                nhất.
-                            </p>
+                                nhất.</p>
                             <a href="#" class="btn btn-success">Bắt Đầu Chat</a>
                         </div>
                     </div>
@@ -95,7 +116,7 @@
     <!-- Footer -->
     <div id="footer"></div>
 
-    <!-- js -->
+    <!-- JS -->
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/load-components.js"></script>
 </body>
