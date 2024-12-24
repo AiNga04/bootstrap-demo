@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,17 +10,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/common.js"></script>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <div class="sticky-top my-5" id="navbar"></div>
+    <!-- Navbar -->
+    <script>addNavbar();</script>
 
     <main>
-        <div class="container py-5">
+        <div class="container py-5 mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
                     <!-- Card for author profile -->
@@ -73,11 +74,10 @@
     </main>
 
     <!-- Footer -->
-    <div id="footer"></div>
+    <script>addFooter();</script>
 
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="./assets/js/load-components.js"></script>
+    <!-- js -->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

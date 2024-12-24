@@ -10,71 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .hero-section {
-            background: url('./img/about-1.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-            border-radius: 10px;
-            position: relative;
-        }
-
-        .hero-section .bg-desc {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 50px;
-            border-radius: 10px;
-        }
-
-        .team-member img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-        }
-
-        .highlight {
-            color: #007BFF;
-            font-weight: bold;
-        }
-
-        .card {
-            border: none;
-            transition: all 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-        }
-
-        footer a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <script src="./assets/js/common.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
 </head>
 
 <body>
-
     <!-- Header -->
-    <div class="sticky-top mb-5" id="navbar"></div>
+    <script>addNavbar();</script>
 
     <!-- Main content -->
-    <main class="container py-5">
+    <main class="container py-5 mt-5">
         <!-- Hero Section -->
         <section class="hero-section mb-5">
             <div class="bg-desc">
@@ -202,15 +148,13 @@
                 </a>
             </div>
         </section>
-
     </main>
 
     <!-- Footer -->
-    <section id="footer"></section>
+    <script>addFooter();</script>
 
     <!-- js -->
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/load-components.js"></script>
 </body>
 
 </html>

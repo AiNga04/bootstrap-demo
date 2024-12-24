@@ -12,15 +12,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/register-course.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/common.js"></script>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <div class="my-5" id="navbar"></div>
+    <!-- Navbar -->
+    <script>addNavbar();</script>
 
     <!-- Main Content -->
-    <main class="container py-5">
+    <main class="container py-5 mt-5">
         <div class="row">
             <!-- left -->
             <div class="col-lg-8 col-md-12">
@@ -89,18 +91,17 @@
     </main>
 
     <!-- Footer -->
-    <div id="footer"></div>
+    <script>addFooter();</script>
 
     <!-- JS -->
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/load-components.js"></script>
     <script src="./assets/js/register-course.js"></script>
 
     <!-- Script to redirect to payment page -->
     <script>
         document.getElementById('courseForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent form submission
-            window.location.href = './payment.html'; // Redirect to payment page
+            event.preventDefault();
+            window.location.href = './payment.html';
         });
     </script>
 

@@ -12,17 +12,143 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/common.js"></script>
 </head>
 
 <body>
 
+    <!-- Navbar -->
+    <script>addNavbar();</script>
+
     <!-- Header -->
-    <div class="sticky-top my-5" id="navbar"></div>
+    <header class="text-white text-center pt-5 pb-4 mt-5">
+        <div class="container">
+            <h1 class="fw-bold text-primary">Cơ Hội Nghề Nghiệp Dành Cho Học Viên</h1>
+            <p class="lead text-secondary">Khám phá những công việc hấp dẫn sau khi hoàn thành các khóa học của chúng
+                tôi!
+        </div>
+    </header>
 
+    <!-- About Section -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4 fw-bold">Tại Sao Nên Chọn Chúng Tôi?</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="./img/job.png" class="img-fluid rounded shadow-sm" alt="About Us">
+            </div>
+            <div class="col-lg-6">
+                <p class="fs-5">
+                    Chúng tôi không chỉ cung cấp kiến thức mà còn giúp bạn định hướng nghề nghiệp và kết nối với các
+                    doanh nghiệp hàng đầu.
+                </p>
+                <p class="fs-5">
+                    Với hàng ngàn cơ hội từ các công ty hàng đầu, bạn sẽ không bỏ lỡ bất kỳ cơ hội nào để phát triển sự
+                    nghiệp của mình.
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Job Listings -->
+    <section id="job-listings" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Danh Sách Việc Làm</h2>
+            <div class="row g-4">
+                <!-- Job Opportunity 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="./img/front-end.jpg" class="card-img-top" alt="Frontend Developer">
+                        <div class="card-body">
+                            <h5 class="card-title">Frontend Developer</h5>
+                            <p class="card-text">Thành thạo HTML, CSS, và JavaScript để xây dựng giao diện web chuyên
+                                nghiệp.</p>
+                            <a href="./job.html" class="btn btn-primary">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Opportunity 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="./img/back-end.avif" class="card-img-top" alt="Backend Developer">
+                        <div class="card-body">
+                            <h5 class="card-title">Backend Developer</h5>
+                            <p class="card-text">Nắm vững Node.js, Python, hoặc Java để phát triển hệ thống backend hiệu
+                                quả.</p>
+                            <a href="./job.html" class="btn btn-primary">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Opportunity 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="./img/data-analyst.jpg" class="card-img-top" alt="Data Analyst">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analyst</h5>
+                            <p class="card-text">Phân tích dữ liệu và đưa ra các quyết định dựa trên dữ liệu bằng các
+                                công cụ như
+                                Python và SQL.</p>
+                            <a href="./job.html" class="btn btn-primary">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 container">
+        <h2 class="text-center mb-4">Học Viên Nói Gì?</h2>
+        <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm p-3">
+                    <blockquote class="blockquote mb-0">
+                        <p>"Khóa học rất bổ ích! Tôi đã tìm được công việc mơ ước tại một công ty lớn sau khi tốt
+                            nghiệp."
+                        </p>
+                        <footer class="blockquote-footer">Nguyễn Văn A, <cite title="Frontend Developer">Frontend
+                                Developer</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm p-3">
+                    <blockquote class="blockquote mb-0">
+                        <p>"Đội ngũ giảng viên chuyên nghiệp, luôn sẵn sàng hỗ trợ mọi thắc mắc của tôi."</p>
+                        <footer class="blockquote-footer">Lê Thị B, <cite title="Data Analyst">Data Analyst</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm p-3">
+                    <blockquote class="blockquote mb-0">
+                        <p>"Hệ thống học tập linh hoạt giúp tôi dễ dàng vừa học vừa làm."</p>
+                        <footer class="blockquote-footer">Trần C, <cite title="Backend Developer">Backend
+                                Developer</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center py-5 bg-primary text-white container rounded-3 mb-5">
+        <h2 class="fw-bold">Tham Gia Ngay Để Mở Ra Tương Lai Sáng Lạn!</h2>
+        <p class="mb-4">Hãy bắt đầu hành trình học tập của bạn ngay hôm nay để không bỏ lỡ cơ hội việc làm tuyệt vời.
+        </p>
+        <a href="./courses.html" class="btn btn-light btn-lg">Đăng Ký Ngay</a>
+    </section>
 
     <!-- Footer -->
-    <div id="footer"></div>
+    <script>addFooter();</script>
 
     <!-- js -->
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
