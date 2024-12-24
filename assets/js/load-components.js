@@ -1,17 +1,29 @@
-// Hàm tải nội dung HTML từ file và chèn vào phần tử có ID tương ứng
-function loadHTML(file, elementId) {
-  fetch(file)
-    .then((response) => {
-      if (!response.ok) throw new Error(`Không thể tải file: ${file}`);
-      return response.text();
-    })
-    .then((data) => {
-      document.getElementById(elementId).innerHTML = data;
-    })
-    .catch((error) => console.error(error));
-}
+// Navbar
+fetch("./_navbar.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("navbar").innerHTML = data;
+  })
+  .catch((error) => {
+    console.error("Error loading navbar:", error);
+  });
 
-// Tải header và footer
-loadHTML("./_navbar.html", "navbar");
-loadHTML("./_contact.html", "contact");
-loadHTML("./_footer.html", "footer");
+// Contact
+fetch("./_contact.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("contact").innerHTML = data;
+  })
+  .catch((error) => {
+    console.error("Error loading contact:", error);
+  });
+
+// Footer
+fetch("./_footer.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("footer").innerHTML = data;
+  })
+  .catch((error) => {
+    console.error("Error loading footer:", error);
+  });
